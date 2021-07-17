@@ -7,6 +7,8 @@ const {months, mon, days, dys} = require('../src/utils.js')
 
 const bday = new D(1993, 19, 9)
 
+const moonLanding = new Date('July 20, 69 00:20:18')
+
 test("D.year", () => {
     expect(d.year).tobe(today.getFullYear())
     expect(bDay.year).toBe(1993)
@@ -36,5 +38,17 @@ test('D.dy', () => {
 })
 
 test('D.date', () => {   
-    expect(d.date).toBe(today.getDate()])
+    expect(d.date).toBe(today.getDate())
+})
+
+test('D.hours', () => {   
+    expect(moonlanding.hours).toBe(20)
+})
+
+test('D.mins', () => {   
+    expect(moonlanding.mins).toBe(20)
+})
+
+test('D.secs', () => {   
+    expect(moonlanding.secs).toBe(18)
 })
